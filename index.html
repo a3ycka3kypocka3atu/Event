@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Учение о Семи Лучах — практическая встреча с Владимиром Маширом в Праге. Телесная диагностика, психосоматика, тибетские поющие чаши. Studio Santiago." />
+  <title>Семь Лучей — Встреча с Владимиром Маширом | Прага</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🜁</text></svg>" />
+</head>
+<body>
+
+  <!-- ════════════════ NAVBAR ════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-title" data-i18n="nav_logo">Семь<span>Лучей</span></span>
+        <span class="nav-logo-sub" data-i18n="nav_logo_sub">практическая встреча · Прага</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#wisdom" data-i18n="nav_wisdom">Учение</a></li>
+        <li><a href="#insights" data-i18n="nav_insights">Открытия</a></li>
+        <li><a href="#master" data-i18n="nav_master">Мастер</a></li>
+        <li><a href="#schedule" data-i18n="nav_schedule">Расписание</a></li>
+        <li><a href="#location" data-i18n="nav_location">Место</a></li>
+        <li>
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="ru" id="langRu">RU</button>
+            <button class="lang-btn" data-lang="ua" id="langUa">UA</button>
+          </div>
+        </li>
+      </ul>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════ HERO / INVITATION ════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Decorative sacred geometry -->
+    <div class="hero-bg-graphic" style="color: var(--color-gold); opacity: 0.35;">
+      <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" fill="none" stroke-width="1">
+          <!-- Central Flower of Life base -->
+          <circle cx="300" cy="300" r="40" stroke-width="1.5" />
+          <circle cx="300" cy="260" r="40" />
+          <circle cx="334.64" cy="280" r="40" />
+          <circle cx="334.64" cy="320" r="40" />
+          <circle cx="300" cy="340" r="40" />
+          <circle cx="265.36" cy="320" r="40" />
+          <circle cx="265.36" cy="280" r="40" />
+          
+          <circle cx="300" cy="300" r="80" stroke-width="1.2" />
+          
+          <circle cx="300" cy="220" r="40" />
+          <circle cx="369.28" cy="260" r="40" />
+          <circle cx="369.28" cy="340" r="40" />
+          <circle cx="300" cy="380" r="40" />
+          <circle cx="230.72" cy="340" r="40" />
+          <circle cx="230.72" cy="260" r="40" />
+          
+          <circle cx="300" cy="300" r="120" stroke-width="1" />
+          
+          <!-- Metatron's Cube subtle lines -->
+          <line x1="300" y1="180" x2="403.92" y2="360" stroke-width="0.5" opacity="0.6"/>
+          <line x1="403.92" y1="360" x2="196.08" y2="360" stroke-width="0.5" opacity="0.6"/>
+          <line x1="196.08" y1="360" x2="300" y2="180" stroke-width="0.5" opacity="0.6"/>
+          <line x1="300" y1="420" x2="403.92" y2="240" stroke-width="0.5" opacity="0.6"/>
+          <line x1="403.92" y1="240" x2="196.08" y2="240" stroke-width="0.5" opacity="0.6"/>
+          <line x1="196.08" y1="240" x2="300" y2="420" stroke-width="0.5" opacity="0.6"/>
+
+          <!-- Expanding circles -->
+          <circle cx="300" cy="300" r="180" stroke-width="0.8" opacity="0.8" stroke-dasharray="10 5"/>
+          <circle cx="300" cy="300" r="220" stroke-width="0.6" opacity="0.6"/>
+          <circle cx="300" cy="300" r="240" stroke-width="1.2" opacity="0.4"/>
+          <circle cx="300" cy="300" r="260" stroke-width="0.4" opacity="0.3" stroke-dasharray="2 4"/>
+          <circle cx="300" cy="300" r="280" stroke-width="0.3" opacity="0.2"/>
+
+          <!-- 8-point star rays -->
+          <line x1="300" y1="40" x2="300" y2="560" stroke-width="0.4" opacity="0.3"/>
+          <line x1="40" y1="300" x2="560" y2="300" stroke-width="0.4" opacity="0.3"/>
+          <line x1="116.15" y1="116.15" x2="483.85" y2="483.85" stroke-width="0.4" opacity="0.3"/>
+          <line x1="116.15" y1="483.85" x2="483.85" y2="116.15" stroke-width="0.4" opacity="0.3"/>
+
+          <!-- Outer elegant moons and stars -->
+          <circle cx="300" cy="60" r="15" stroke-width="1.5" />
+          <circle cx="300" cy="540" r="15" stroke-width="1.5" />
+          <circle cx="60" cy="300" r="15" stroke-width="1.5" />
+          <circle cx="540" cy="300" r="15" stroke-width="1.5" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- Floating light particles -->
+    <div class="hero-particles">
+      <div class="light-orb"></div>
+      <div class="light-orb"></div>
+      <div class="light-orb"></div>
+      <div class="light-orb"></div>
+      <div class="light-orb"></div>
+      <div class="light-orb"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-symbol">🜁</div>
+
+      <div class="hero-invitation" data-i18n="hero_invitation">Приглашение на особую встречу</div>
+
+      <h1 data-i18n="hero_title">Вневременная <em data-i18n="hero_title_em">Мудрость</em></h1>
+
+      <p class="hero-sub" data-i18n="hero_sub">Учение о Семи Лучах — глубокое знание, которое объясняет людей глубже, чем психология. Приглашаем вас на серию практических встреч с Владимиром Маширом в Праге.</p>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-i18n="hero_location_text">Studio Santiago, Прага</span>
+        </div>
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span data-i18n="hero_dates_text">24 — 26 апреля 2026</span>
+        </div>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="#schedule" class="btn btn-primary" data-i18n="hero_cta">Узнать подробности</a>
+        <a href="#wisdom" class="btn btn-outline" data-i18n="hero_cta2">О чём учение</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <svg viewBox="0 0 24 24"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ════════════════ WISDOM — Seven Rays ════════════════ -->
+  <section class="wisdom" id="wisdom">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="wisdom_label">Учение о Семи Лучах</span>
+        <h2 data-i18n="wisdom_title">Есть система, которая объясняет людей глубже, чем психология</h2>
+        <div class="accent-line"></div>
+      </div>
+
+      <div class="wisdom-question reveal reveal-delay-1">
+        <p class="wisdom-lead" data-i18n="wisdom_lead">Замечали ли вы, что:</p>
+        <div class="wisdom-observations">
+          <div class="observation-item">
+            <span class="obs-dash">—</span>
+            <span data-i18n="wisdom_obs1">один человек действует через силу</span>
+          </div>
+          <div class="observation-item">
+            <span class="obs-dash">—</span>
+            <span data-i18n="wisdom_obs2">другой через чувства</span>
+          </div>
+          <div class="observation-item">
+            <span class="obs-dash">—</span>
+            <span data-i18n="wisdom_obs3">третий через понимание</span>
+          </div>
+        </div>
+        <p class="wisdom-note" data-i18n="wisdom_note">И каждый уверен, что его путь правильный</p>
+      </div>
+
+      <div class="wisdom-highlight reveal reveal-delay-2">
+        <div class="highlight-icon">✨</div>
+        <p data-i18n="wisdom_highlight">Именно здесь возникают конфликты, усталость и непонимание</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ SACRED GEOMETRY DIVIDER + TITLE ════════════════ -->
+  <section class="sacred-geometry-divider" id="insights">
+    <div class="geometry-bg"></div>
+    <div class="container" style="position: relative; z-index: 2; text-align: center;">
+      <div class="section-header reveal section-header--light" style="
+        background: rgba(15, 15, 30, 0.7); 
+        backdrop-filter: blur(12px); 
+        -webkit-backdrop-filter: blur(12px); 
+        padding: 40px 60px; 
+        border-radius: var(--radius); 
+        border: 1px solid rgba(212, 168, 67, 0.25); 
+        display: inline-block; 
+        margin-bottom: 0;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      ">
+        <span class="section-label" data-i18n="insights_label" style="color: var(--color-gold-light);">Что открывает учение</span>
+        <h2 data-i18n="insights_title" style="color: #FFFFFF; text-shadow: 0 2px 8px rgba(0,0,0,0.6);">Учение о Семи Лучах показывает</h2>
+        <div class="accent-line" style="background: var(--color-gold-light);"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ INSIGHTS — What Seven Rays Reveals ════════════════ -->
+  <section class="insights" style="padding-top: var(--gap-lg);">
+
+      <div class="insights-grid">
+        <div class="insight-card reveal">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 data-i18n="insight1_title">Почему люди такие разные</h3>
+          <p data-i18n="insight1_text">Понимание глубинных отличий в энергетической природе каждого человека</p>
+        </div>
+
+        <div class="insight-card reveal reveal-delay-1">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 data-i18n="insight2_title">Какой тип энергии у вас</h3>
+          <p data-i18n="insight2_text">Определение вашего уникального энергетического луча и его влияния на жизнь</p>
+        </div>
+
+        <div class="insight-card reveal reveal-delay-2">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          </div>
+          <h3 data-i18n="insight3_title">Как вы принимаете решения</h3>
+          <p data-i18n="insight3_text">Осознание механизмов вашего мышления и действий в различных ситуациях</p>
+        </div>
+
+        <div class="insight-card reveal reveal-delay-3">
+          <div class="insight-icon">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 data-i18n="insight4_title">Где вы теряете ресурс</h3>
+          <p data-i18n="insight4_text">Обнаружение скрытых утечек энергии и восстановление внутренней силы</p>
+        </div>
+      </div>
+
+      <!-- Transformation -->
+      <div class="transformation reveal">
+        <div class="transform-header">
+          <span class="section-label" data-i18n="transform_label">Когда приходит это понимание</span>
+        </div>
+        <div class="transform-items">
+          <div class="transform-item">
+            <div class="transform-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span data-i18n="transform1">Исчезает внутренний конфликт</span>
+          </div>
+          <div class="transform-item">
+            <div class="transform-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <span data-i18n="transform2">Появляется ясность</span>
+          </div>
+          <div class="transform-item">
+            <div class="transform-icon">
+              <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+            <span data-i18n="transform3">Возвращается опора внутри</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Not about faith -->
+      <div class="not-faith reveal">
+        <div class="not-faith-symbol">🜂</div>
+        <p class="not-faith-text" data-i18n="not_faith">Это не про веру. Это про глубокое узнавание себя.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ MASTER — Vladimir Mashir ════════════════ -->
+  <section class="master" id="master" style="position: relative; overflow: hidden;">
+    <!-- Large ethereal mandala background behind master section -->
+    <div class="bg-graphic-alt">
+      <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" fill="none" stroke-width="0.6" opacity="0.06" transform="translate(300,300)">
+          <!-- 12-petaled delicate torus -->
+          <circle cx="0" cy="-80" r="160"/>
+          <circle cx="40" cy="-69.28" r="160"/>
+          <circle cx="69.28" cy="-40" r="160"/>
+          <circle cx="80" cy="0" r="160"/>
+          <circle cx="69.28" cy="40" r="160"/>
+          <circle cx="40" cy="69.28" r="160"/>
+          <circle cx="0" cy="80" r="160"/>
+          <circle cx="-40" cy="69.28" r="160"/>
+          <circle cx="-69.28" cy="40" r="160"/>
+          <circle cx="-80" cy="0" r="160"/>
+          <circle cx="-69.28" cy="-40" r="160"/>
+          <circle cx="-40" cy="-69.28" r="160"/>
+          
+          <circle r="240" stroke-width="0.3"/>
+          <circle r="80" stroke-width="0.3"/>
+        </g>
+      </svg>
+    </div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="master_label">Практическая встреча</span>
+        <h2 data-i18n="master_title">Владимир Машир</h2>
+        <div class="accent-line"></div>
+      </div>
+
+      <div class="master-content">
+        <div class="master-approach reveal">
+          <p class="master-intro" data-i18n="master_intro">Приглашаем вас на особую встречу с мастером, чей подход объединяет древнюю мудрость и современное понимание тела и сознания.</p>
+
+          <div class="approach-cards">
+            <div class="approach-card reveal reveal-delay-1">
+              <div class="approach-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <h3 data-i18n="approach1_title">Телесная диагностика</h3>
+              <p data-i18n="approach1_text">Глубокое считывание состояния тела — понимание того, что ваше тело пытается вам сказать</p>
+            </div>
+
+            <div class="approach-card reveal reveal-delay-2">
+              <div class="approach-icon">
+                <svg viewBox="0 0 24 24"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r=".5" fill="currentColor"/><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <h3 data-i18n="approach2_title">Работа с психосоматикой</h3>
+              <p data-i18n="approach2_text">Выявление и растворение скрытых блоков, которые проявляются через тело</p>
+            </div>
+
+            <div class="approach-card reveal reveal-delay-3">
+              <div class="approach-icon">
+                <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/><circle cx="12" cy="2" r="1" fill="currentColor"/></svg>
+              </div>
+              <h3 data-i18n="approach3_title">Тибетские поющие чаши</h3>
+              <p data-i18n="approach3_text">Мягкое восстановление состояния через звуковые вибрации и настройку на энергетические ритмы</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo Carousel -->
+        <div class="photo-carousel-section reveal">
+          <div class="carousel-theme-buttons">
+            <button class="theme-btn active" data-theme="sport" id="themeSport">
+              <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              <span data-i18n="theme_sport">Спорт</span>
+            </button>
+            <button class="theme-btn" data-theme="practice" id="themePractice">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+              <span data-i18n="theme_practice">Практики</span>
+            </button>
+            <button class="theme-btn" data-theme="vladimir" id="themeVladimir">
+              <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span data-i18n="theme_vladimir">Владимир</span>
+            </button>
+          </div>
+
+          <div class="carousel-viewport">
+            <div class="carousel-track" id="carouselTrack">
+              <!-- Sport photos — real images -->
+              <div class="carousel-slide" data-theme="sport">
+                <img src="images/Sport/sport-svitolina.png" alt="Еліна Світоліна">
+                <div class="slide-caption">
+                  <span class="caption-name">Еліна Світоліна</span>
+                  <span class="caption-detail">Підготовка, 2016</span>
+                </div>
+              </div>
+              <div class="carousel-slide" data-theme="sport">
+                <img src="images/Sport/sport-tsurenko.png" alt="Леся Цуренко">
+                <div class="slide-caption">
+                  <span class="caption-name">Леся Цуренко</span>
+                  <span class="caption-detail">Робота, 2018–19</span>
+                </div>
+              </div>
+              <div class="carousel-slide" data-theme="sport">
+                <img src="images/Sport/sport-krasyk.png" alt="Олександр Красюк">
+                <div class="slide-caption">
+                  <span class="caption-name">Олександр Красюк (K2)</span>
+                  <span class="caption-detail">Спільні проекти, 2018</span>
+                </div>
+              </div>
+              <div class="carousel-slide" data-theme="sport">
+                <img src="images/Sport/sport-sekachov.png" alt="Гліб Секачьов">
+                <div class="slide-caption">
+                  <span class="caption-name">Гліб Секачьов</span>
+                  <span class="caption-detail">Теніс, з 2024</span>
+                </div>
+              </div>
+              <div class="carousel-slide" data-theme="sport">
+                <img src="images/Sport/sport-kutniy.png" alt="Ілля Кутній">
+                <div class="slide-caption">
+                  <span class="caption-name">Ілля Кутній</span>
+                  <span class="caption-detail">Підготовка, 2022</span>
+                </div>
+              </div>
+
+              <div class="carousel-slide" data-theme="sport">
+                <img src="images/Sport/sport-new.jpg" alt="Диплом та Олімпійська збірна">
+                <div class="slide-caption">
+                  <span class="caption-name">Володимир Машир</span>
+                  <span class="caption-detail">Національний університет</span>
+                </div>
+              </div>
+
+              <!-- Practice and Lessons photos -->
+              <div class="carousel-slide img-contain" data-theme="practice">
+                <img src="images/Practice and Lessions/practice-1.jpg" alt="Структура людини">
+              </div>
+              <div class="carousel-slide img-contain" data-theme="practice">
+                <img src="images/Practice and Lessions/practice-2.jpg" alt="Сертифікат - 1">
+              </div>
+              <div class="carousel-slide img-contain" data-theme="practice">
+                <img src="images/Practice and Lessions/practice-3.jpg" alt="Матеріали - 1">
+              </div>
+              <div class="carousel-slide img-contain" data-theme="practice">
+                <img src="images/Practice and Lessions/practice-4.jpg" alt="Матеріали - 2">
+              </div>
+              <div class="carousel-slide img-contain" data-theme="practice">
+                <img src="images/Practice and Lessions/practice-5.jpg" alt="Сертифікат - 2">
+              </div>
+              <div class="carousel-slide img-contain" data-theme="practice">
+                <img src="images/Practice and Lessions/practice-6.jpg" alt="Сертифікат - 3">
+              </div>
+              <div class="carousel-slide" data-theme="practice">
+                <img src="images/Practice and Lessions/practice-bowls.png" alt="Тибетські співочі чаші">
+                <div class="slide-caption">
+                  <span class="caption-name">Тибетські чаші</span>
+                  <span class="caption-detail">Звукова терапія</span>
+                </div>
+              </div>
+
+              <!-- Vladimir photos -->
+              <div class="carousel-slide" data-theme="vladimir">
+                <img src="images/Vladimir/vladimir-1.jpg" alt="Владимир Машир - 1">
+              </div>
+              <div class="carousel-slide" data-theme="vladimir">
+                <img src="images/Vladimir/vladimir-2.jpg" alt="Владимир Машир - 2">
+              </div>
+              <div class="carousel-slide" data-theme="vladimir">
+                <img src="images/Vladimir/vladimir-4.jpg" alt="Владимир Машир - 4">
+              </div>
+              <div class="carousel-slide" data-theme="vladimir">
+                <img src="images/Vladimir/vladimir-6.jpg" alt="Владимир Машир - 6">
+              </div>
+              <div class="carousel-slide" data-theme="vladimir">
+                <img src="images/Vladimir/vladimir-7.jpg" alt="Владимир Машир - 7">
+              </div>
+              <div class="carousel-slide" data-theme="vladimir">
+                <img src="images/Vladimir/vladimir-8.jpg" alt="Владимир Машир - 8">
+              </div>
+              <div class="carousel-slide" data-theme="vladimir">
+                <img src="images/Vladimir/vladimir-9.jpg" alt="Владимир Машир - 9">
+              </div>
+              <div class="carousel-slide" data-theme="vladimir">
+                <img src="images/Vladimir/vladimir-10.jpg" alt="Владимир Машир - 10">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ SCHEDULE ════════════════ -->
+  <section class="schedule" id="schedule">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="schedule_label">Расписание</span>
+        <h2 data-i18n="schedule_title">Три дня практических встреч</h2>
+        <div class="accent-line"></div>
+      </div>
+
+      <div class="schedule-cards">
+        <div class="schedule-card reveal">
+          <div class="schedule-day">
+            <span class="day-number">24</span>
+            <span class="day-month" data-i18n="month_apr">апреля</span>
+          </div>
+          <div class="schedule-info">
+            <div class="schedule-time">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>18:00</span>
+            </div>
+            <p class="schedule-desc" data-i18n="sched1_desc">Вечерняя встреча — знакомство с учением и первая практика</p>
+          </div>
+          <div class="schedule-day-label" data-i18n="day_thu">Четверг</div>
+        </div>
+
+        <div class="schedule-card featured reveal reveal-delay-1">
+          <div class="schedule-day">
+            <span class="day-number">25</span>
+            <span class="day-month" data-i18n="month_apr">апреля</span>
+          </div>
+          <div class="schedule-info">
+            <div class="schedule-time">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>11:00</span>
+            </div>
+            <p class="schedule-desc" data-i18n="sched2_desc">Утренняя встреча — глубокая работа с телесной диагностикой и психосоматикой</p>
+          </div>
+          <div class="schedule-day-label" data-i18n="day_fri">Пятница</div>
+        </div>
+
+        <div class="schedule-card reveal reveal-delay-2">
+          <div class="schedule-day">
+            <span class="day-number">26</span>
+            <span class="day-month" data-i18n="month_apr">апреля</span>
+          </div>
+          <div class="schedule-info">
+            <div class="schedule-time">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>11:00</span>
+            </div>
+            <p class="schedule-desc" data-i18n="sched3_desc">Утренняя встреча — звуковая медитация с тибетскими поющими чашами</p>
+          </div>
+          <div class="schedule-day-label" data-i18n="day_sat">Суббота</div>
+        </div>
+      </div>
+
+      <p class="schedule-note reveal" data-i18n="schedule_note">Вы можете посетить одну встречу или весь цикл</p>
+    </div>
+  </section>
+
+  <!-- ════════════════ LOCATION ════════════════ -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="location-card reveal">
+        <div class="location-info">
+          <span class="section-label" data-i18n="location_label">Место проведения</span>
+          <h2 data-i18n="location_title">Studio Santiago</h2>
+          <div class="accent-line accent-line--left"></div>
+
+          <div class="location-address">
+            <div class="address-item">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <span class="address-main">Holečkova 777/39</span>
+                <span class="address-detail">150 00 Praha 5-Smíchov</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://maps.google.com/?q=Holečkova+777/39,+150+00+Praha+5" target="_blank" rel="noopener" class="btn btn-outline location-map-btn" data-i18n="location_map">
+            <svg viewBox="0 0 24 24"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            Открыть на карте
+          </a>
+        </div>
+
+        <div class="location-visual">
+          <div class="location-image-area">
+            <div class="location-prague-text">Praha 5</div>
+            <div class="location-studio-name">Studio Santiago</div>
+            <svg class="location-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ CTA ════════════════ -->
+  <section class="cta-section" id="register">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-symbol">🜁</div>
+        <h2 data-i18n="cta_title">Откройте для себя путь к глубокому узнаванию</h2>
+        <p data-i18n="cta_sub">Количество мест ограничено для создания камерной атмосферы</p>
+        <a href="https://t.me/" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="cta_btn">Забронировать место</a>
+        <p class="cta-note" data-i18n="cta_note">Для бронирования напишите нам в Telegram</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ FOOTER ════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer_copy">© 2026 Семь Лучей · Владимир Машир. Все права защищены.</p>
+      <div class="footer-links">
+        <a href="#" data-i18n="footer_privacy">Конфиденциальность</a>
+        <a href="#" data-i18n="footer_contact">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
