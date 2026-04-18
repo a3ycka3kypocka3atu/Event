@@ -101,6 +101,7 @@ const translations = {
     day_thu: 'Четверг',
     day_fri: 'Пятница',
     day_sat: 'Суббота',
+    day_sun: 'Воскресенье',
     schedule_note: 'Вы можете посетить одну встречу или весь цикл',
 
     // Location
@@ -216,6 +217,7 @@ const translations = {
     day_thu: 'Четвер',
     day_fri: 'П\'ятниця',
     day_sat: 'Субота',
+    day_sun: 'Неділя',
     schedule_note: 'Ви можете відвідати одну зустріч або весь цикл',
 
     // Location
