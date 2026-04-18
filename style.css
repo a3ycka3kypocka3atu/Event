@@ -977,6 +977,23 @@ section {
    ============================================================ */
 .insights {
   background: var(--bg-deep);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark mode: golden alchemy border on insight cards */
+[data-theme="dark"] .insight-card {
+  border-color: rgba(212, 168, 67, 0.12);
+}
+[data-theme="dark"] .insight-card:hover {
+  border-color: rgba(212, 168, 67, 0.3);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.4), 0 0 30px rgba(212, 168, 67, 0.06);
+}
+[data-theme="dark"] .transform-item {
+  border-color: rgba(212, 168, 67, 0.1);
+}
+[data-theme="dark"] .transform-item:hover {
+  border-color: rgba(212, 168, 67, 0.25);
 }
 
 .insights-grid {
