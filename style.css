@@ -618,6 +618,18 @@ section {
   font-size: 0.92rem;
   font-weight: 500;
   color: var(--color-text-secondary);
+  transition: all var(--duration-fast) ease;
+  text-decoration: none;
+}
+
+a.hero-meta-item:hover {
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+a.hero-meta-item:hover svg {
+  transform: scale(1.1);
+  stroke: var(--color-primary-light);
 }
 
 .hero-meta-item svg {
