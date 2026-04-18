@@ -61,12 +61,12 @@
 }
 
 [data-theme="dark"] {
-  /* Backgrounds — Dark mode */
-  --bg-deep: #0D0B12;
-  --bg-surface: #141118;
-  --bg-elevated: #1C1823;
-  --bg-card: #181520;
-  --bg-accent-soft: #2A1B3D;
+  /* Backgrounds — Dark mode (Dark Blue / Midnight) */
+  --bg-deep: #0B1021;
+  --bg-surface: #11182C;
+  --bg-elevated: #1A233A;
+  --bg-card: #151D30;
+  --bg-accent-soft: #1E2940;
 
   /* Primary */
   --color-primary: #9F67FF;
@@ -89,8 +89,18 @@
   /* Border & Surface */
   --color-border: rgba(159, 103, 255, 0.15);
   --color-border-hover: rgba(159, 103, 255, 0.3);
-  --color-glass: rgba(13, 11, 18, 0.85);
-  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-glass: rgba(11, 16, 33, 0.85);
+  --color-shadow: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .hero-content {
+  background: radial-gradient(circle, rgba(11, 16, 33, 0.7) 0%, rgba(11, 16, 33, 0.4) 50%, transparent 80%);
+}
+
+[data-theme="dark"] .hero-invitation {
+  background: rgba(159, 103, 255, 0.15);
+  color: #B48BFF;
+  border-color: rgba(159, 103, 255, 0.3);
 }
 
 /* ---------- Reset & Base ---------- */
