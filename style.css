@@ -465,7 +465,9 @@ section {
   z-index: 2;
   text-align: center;
   max-width: 780px;
-  padding: 0 24px;
+  padding: 60px 40px;
+  background: radial-gradient(circle, rgba(253, 251, 247, 0.85) 0%, rgba(253, 251, 247, 0.5) 50%, rgba(253, 251, 247, 0) 80%);
+  border-radius: 50%;
 }
 
 .hero-symbol {
@@ -487,14 +489,10 @@ section {
   font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-primary-hover);
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(124, 58, 237, 0.3);
-  box-shadow: 
-    0 4px 15px rgba(124, 58, 237, 0.15), 
-    0 0 20px rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  color: #4C1D95;
+  background: #EDE9FE;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.15);
   border-radius: var(--radius-pill);
   padding: 12px 32px;
   margin-bottom: 32px;
@@ -548,6 +546,34 @@ section {
   stroke: var(--color-primary);
   fill: none;
   stroke-width: 2;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.hero-tag {
+  background: var(--bg-elevated);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  transition: all var(--duration-fast) ease;
+}
+
+.hero-tag:hover {
+  background: #FDFBF7;
+  border-color: var(--color-primary-subtle);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
 }
 
 .hero-cta-group {
