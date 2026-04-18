@@ -1747,8 +1747,8 @@ a.hero-meta-item:hover svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
-  max-width: 900px;
+  gap: 24px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -1757,7 +1757,7 @@ a.hero-meta-item:hover svg {
   background: var(--bg-elevated);
   border-radius: var(--radius);
   border: 1px solid var(--color-border);
-  padding: 48px 40px;
+  padding: 32px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1773,13 +1773,12 @@ a.hero-meta-item:hover svg {
 
 /* Primary Tier prominence */
 .pricing-card--primary {
-  max-width: 650px;
   border: 2px solid var(--color-primary);
   background: linear-gradient(180deg, var(--color-primary-subtle), var(--bg-elevated));
 }
 
 .pricing-card--primary .price-val {
-  font-size: clamp(3rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
   color: var(--color-primary);
   font-family: var(--font-heading);
   font-weight: 700;
@@ -1788,15 +1787,14 @@ a.hero-meta-item:hover svg {
 }
 
 .pricing-card--primary h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--color-text);
   margin-bottom: 8px;
 }
 
 /* Secondary Tier prominence */
 .pricing-card--secondary {
-  max-width: 480px;
-  padding: 36px 32px;
+  padding: 24px 20px;
 }
 
 .pricing-card--secondary .price-val {
@@ -1828,12 +1826,11 @@ a.hero-meta-item:hover svg {
 /* Accessible Tier subtle style */
 .pricing-accessible {
   text-align: center;
-  max-width: 700px;
-  padding: 32px 24px;
+  padding: 24px 20px;
   border: 1px dashed var(--color-border);
   border-radius: var(--radius-sm);
   background: rgba(255, 255, 255, 0.02);
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 .pricing-accessible p {
