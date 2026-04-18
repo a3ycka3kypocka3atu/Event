@@ -1745,15 +1745,18 @@ a.hero-meta-item:hover svg {
 
 .pricing-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  max-width: 500px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 32px;
+  max-width: var(--container-width);
   margin: 0 auto;
 }
 
 .pricing-card {
-  width: 100%;
+  flex: 1;
+  min-width: 340px;
   background: var(--bg-elevated);
   border-radius: var(--radius);
   border: 1px solid var(--color-border);
@@ -1773,6 +1776,7 @@ a.hero-meta-item:hover svg {
 
 /* Primary Tier prominence */
 .pricing-card--primary {
+  flex: 1.15;
   border: 2px solid var(--color-primary);
   background: linear-gradient(180deg, var(--color-primary-subtle), var(--bg-elevated));
 }
@@ -1794,7 +1798,8 @@ a.hero-meta-item:hover svg {
 
 /* Secondary Tier prominence */
 .pricing-card--secondary {
-  padding: 24px 20px;
+  flex: 0.95;
+  padding: 32px 28px;
 }
 
 .pricing-card--secondary .price-val {
@@ -1825,12 +1830,13 @@ a.hero-meta-item:hover svg {
 
 /* Accessible Tier subtle style */
 .pricing-accessible {
+  width: 100%;
   text-align: center;
-  padding: 24px 20px;
+  padding: 28px 32px;
   border: 1px dashed var(--color-border);
   border-radius: var(--radius-sm);
   background: rgba(255, 255, 255, 0.02);
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .pricing-accessible p {
@@ -1858,12 +1864,18 @@ a.hero-meta-item:hover svg {
 }
 
 /* Responsiveness */
+@media (max-width: 1024px) {
+  .pricing-content {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+  }
+}
+
 @media (max-width: 768px) {
   .pricing-card {
-    padding: 40px 24px;
-  }
-  .pricing-card--primary .price-val {
-    font-size: 3rem;
+    padding: 32px 24px;
+    min-width: 0;
   }
 }
 
