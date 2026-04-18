@@ -951,6 +951,76 @@ section {
 }
 
 /* ============================================================
+   QIGONG SECTION
+   ============================================================ */
+.qigong {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.qigong-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .qigong-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.qigong-card {
+  background: var(--bg-deep);
+  border: 1px solid rgba(124, 58, 237, 0.1);
+  border-radius: var(--radius);
+  padding: 36px 32px;
+  transition: all var(--duration) var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+
+.qigong-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(124, 58, 237, 0.05);
+  border-color: rgba(124, 58, 237, 0.3);
+}
+
+.qigong-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-subtle);
+  border-radius: 12px;
+}
+
+.qigong-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-primary);
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.qigong-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.qigong-card p {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ============================================================
    MASTER SECTION
    ============================================================ */
 .master {
