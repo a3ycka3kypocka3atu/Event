@@ -676,7 +676,7 @@ section {
 }
 
 .wisdom-question {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -686,60 +686,82 @@ section {
   font-size: clamp(1.1rem, 1.4vw, 1.3rem);
   color: var(--color-text);
   font-weight: 500;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
 
-.wisdom-observations {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 32px;
+.wisdom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
 }
 
-.observation-item {
+@media (max-width: 768px) {
+  .wisdom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wisdom-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  transition: all var(--duration) var(--ease-out);
+}
+
+.wisdom-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.05);
+  border-color: var(--color-primary-subtle);
+}
+
+.wisdom-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  font-family: var(--font-heading);
-  font-size: clamp(1rem, 1.2vw, 1.15rem);
-  color: var(--color-text-secondary);
-  font-style: italic;
+  background: var(--color-primary-light);
+  border-radius: 12px;
+  color: var(--color-primary);
 }
 
-.obs-dash {
-  color: var(--color-primary);
-  font-style: normal;
+.wisdom-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-primary);
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.wisdom-card p {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.wisdom-card p strong {
+  color: var(--color-text);
   font-weight: 600;
 }
 
-.wisdom-note {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  color: var(--color-text-muted);
-  font-style: italic;
-  margin-top: 8px;
-}
-
-.wisdom-highlight {
-  max-width: 560px;
-  margin: 48px auto 0;
+.wisdom-conclusion-card {
+  max-width: 860px;
+  margin: 0 auto;
   text-align: center;
-  padding: 32px;
+  padding: 32px 40px;
   background: linear-gradient(135deg, var(--color-primary-subtle), rgba(184, 134, 11, 0.04));
   border-radius: var(--radius);
-  border: 1px solid rgba(124, 58, 237, 0.08);
+  border: 1px solid rgba(124, 58, 237, 0.1);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.05);
 }
 
-.highlight-icon {
-  font-size: 1.6rem;
-  margin-bottom: 12px;
-}
-
-.wisdom-highlight p {
+.wisdom-conclusion-card p {
   font-family: var(--font-heading);
   font-size: clamp(1.05rem, 1.3vw, 1.2rem);
-  color: var(--color-primary);
+  color: var(--color-text);
   font-weight: 500;
   line-height: 1.7;
 }
