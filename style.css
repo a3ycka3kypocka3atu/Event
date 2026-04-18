@@ -387,7 +387,7 @@ section {
   pointer-events: none;
   color: var(--color-gold);
   opacity: 0.8;
-  animation: slowSpin 120s linear infinite;
+  animation: slowSpinReverse 120s linear infinite;
 }
 
 .bg-graphic-alt {
