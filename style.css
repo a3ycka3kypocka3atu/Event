@@ -1117,22 +1117,28 @@ section {
 }
 
 .approach-icon {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin: 0 auto 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--color-primary-light), var(--bg-accent-soft));
-  border-radius: 16px;
+  background: transparent;
 }
 
 .approach-icon svg {
-  width: 28px;
-  height: 28px;
-  stroke: var(--color-primary);
+  width: 54px;
+  height: 54px;
+  stroke: var(--color-gold);
   fill: none;
-  stroke-width: 1.8;
+  stroke-width: 1.2;
+  filter: drop-shadow(0 0 12px rgba(124, 58, 237, 0.4));
+  transition: all var(--duration) var(--ease-out);
+}
+
+.approach-card:hover .approach-icon svg {
+  filter: drop-shadow(0 0 20px rgba(124, 58, 237, 0.6));
+  transform: scale(1.05);
 }
 
 .approach-card h3 {

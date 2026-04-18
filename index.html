@@ -333,24 +333,41 @@
   <section class="master" id="master" style="position: relative; overflow: hidden;">
     <!-- Large ethereal mandala background behind master section -->
     <div class="bg-graphic-alt">
-      <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-        <g stroke="currentColor" fill="none" stroke-width="0.6" opacity="0.06" transform="translate(300,300)">
-          <!-- 12-petaled delicate torus -->
-          <circle cx="0" cy="-80" r="160"/>
-          <circle cx="40" cy="-69.28" r="160"/>
-          <circle cx="69.28" cy="-40" r="160"/>
-          <circle cx="80" cy="0" r="160"/>
-          <circle cx="69.28" cy="40" r="160"/>
-          <circle cx="40" cy="69.28" r="160"/>
-          <circle cx="0" cy="80" r="160"/>
-          <circle cx="-40" cy="69.28" r="160"/>
-          <circle cx="-69.28" cy="40" r="160"/>
-          <circle cx="-80" cy="0" r="160"/>
-          <circle cx="-69.28" cy="-40" r="160"/>
-          <circle cx="-40" cy="-69.28" r="160"/>
-          
-          <circle r="240" stroke-width="0.3"/>
-          <circle r="80" stroke-width="0.3"/>
+      <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" fill="currentColor" stroke-width="0.8" opacity="0.08" transform="translate(100, 100)">
+          <!-- lines -->
+          <line x1="50" y1="50" x2="150" y2="100"/>
+          <line x1="150" y1="100" x2="250" y2="80"/>
+          <line x1="150" y1="100" x2="200" y2="200"/>
+          <line x1="50" y1="50" x2="80" y2="180"/>
+          <line x1="80" y1="180" x2="200" y2="200"/>
+          <line x1="250" y1="80" x2="350" y2="150"/>
+          <line x1="200" y1="200" x2="350" y2="150"/>
+          <line x1="350" y1="150" x2="400" y2="50"/>
+          <line x1="250" y1="80" x2="400" y2="50"/>
+          <line x1="200" y1="200" x2="300" y2="300"/>
+          <line x1="80" y1="180" x2="120" y2="320"/>
+          <line x1="120" y1="320" x2="300" y2="300"/>
+          <line x1="350" y1="150" x2="450" y2="250"/>
+          <line x1="300" y1="300" x2="450" y2="250"/>
+          <line x1="450" y1="250" x2="550" y2="180"/>
+          <line x1="400" y1="50" x2="550" y2="180"/>
+          <line x1="300" y1="300" x2="380" y2="400"/>
+          <line x1="450" y1="250" x2="380" y2="400"/>
+
+          <!-- nodes -->
+          <circle cx="50" cy="50" r="3.5"/>
+          <circle cx="150" cy="100" r="4.5"/>
+          <circle cx="250" cy="80" r="3"/>
+          <circle cx="200" cy="200" r="5.5"/>
+          <circle cx="80" cy="180" r="3.5"/>
+          <circle cx="350" cy="150" r="5"/>
+          <circle cx="400" cy="50" r="2.5"/>
+          <circle cx="300" cy="300" r="4"/>
+          <circle cx="120" cy="320" r="3"/>
+          <circle cx="450" cy="250" r="4.5"/>
+          <circle cx="550" cy="180" r="3.5"/>
+          <circle cx="380" cy="400" r="4.5"/>
         </g>
       </svg>
     </div>
@@ -369,7 +386,15 @@
           <div class="approach-cards">
             <div class="approach-card reveal reveal-delay-1">
               <div class="approach-icon">
-                <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <!-- Silhouette torso & spine -->
+                  <path d="M12 2C9.5 2 7 4.5 7 8c0 3 2.5 5 3.5 7C11.5 16.5 11 20.5 8 22h8c-3-1.5-3.5-5.5-2.5-7 1-2 3.5-4 3.5-7 0-3.5-2.5-6-5-6z" stroke-width="1.2"/>
+                  <!-- Spine light nodes -->
+                  <circle cx="12" cy="6" r="1.5" fill="currentColor" stroke="none"/>
+                  <circle cx="12" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+                  <circle cx="12" cy="16" r="1.5" fill="currentColor" stroke="none"/>
+                  <circle cx="12" cy="20" r="1.5" fill="currentColor" stroke="none"/>
+                </svg>
               </div>
               <h3 data-i18n="approach1_title">Телесная диагностика</h3>
               <p data-i18n="approach1_text">Глубокое считывание состояния тела — понимание того, что ваше тело пытается вам сказать</p>
@@ -377,7 +402,16 @@
 
             <div class="approach-card reveal reveal-delay-2">
               <div class="approach-icon">
-                <svg viewBox="0 0 24 24"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r=".5" fill="currentColor"/><circle cx="12" cy="12" r="10"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <!-- Head profile -->
+                  <path d="M12 2C7.5 2 4 5 4 10c0 4 2 5 2 7.5S5 22 5 22h9c2 0 6-3 6-9 0-5.5-3.5-11-8-11z" stroke-width="1.2"/>
+                  <!-- Neural paths inside -->
+                  <path d="M11 7L8 10l3 3 2.5-1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 2"/>
+                  <circle cx="8" cy="10" r="1" fill="currentColor" stroke="none"/>
+                  <circle cx="11" cy="7" r="1" fill="currentColor" stroke="none"/>
+                  <circle cx="11" cy="13" r="1" fill="currentColor" stroke="none"/>
+                  <circle cx="13.5" cy="11.5" r="1" fill="currentColor" stroke="none"/>
+                </svg>
               </div>
               <h3 data-i18n="approach2_title">Работа с психосоматикой</h3>
               <p data-i18n="approach2_text">Выявление и растворение скрытых блоков, которые проявляются через тело</p>
@@ -385,7 +419,18 @@
 
             <div class="approach-card reveal reveal-delay-3">
               <div class="approach-icon">
-                <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/><circle cx="12" cy="2" r="1" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <!-- Bowl -->
+                  <path d="M4 12c0 4.5 3.5 7 8 7s8-2.5 8-7v-3H4v3z"/>
+                  <!-- Bowl rim -->
+                  <ellipse cx="12" cy="9" rx="8" ry="2.5"/>
+                  <!-- Mallet -->
+                  <path d="M19.5 4.5l-3 3" stroke-linecap="round" stroke-width="1.5"/>
+                  <circle cx="19.5" cy="4.5" r="1.5" fill="currentColor" stroke="none"/>
+                  <!-- Radiating ripples -->
+                  <path d="M7 4a7 7 0 0 1 10 0" stroke-linecap="round" stroke-dasharray="1 4"/>
+                  <path d="M5 2a10 10 0 0 1 14 0" stroke-linecap="round" stroke-dasharray="1 5"/>
+                </svg>
               </div>
               <h3 data-i18n="approach3_title">Тибетские поющие чаши</h3>
               <p data-i18n="approach3_text">Мягкое восстановление состояния через звуковые вибрации и настройку на энергетические ритмы</p>
