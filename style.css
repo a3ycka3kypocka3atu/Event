@@ -861,22 +861,28 @@ section {
 }
 
 .insight-icon {
-  width: 52px;
-  height: 52px;
-  margin: 0 auto 18px;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-primary-light);
-  border-radius: 14px;
+  background: transparent;
 }
 
 .insight-icon svg {
-  width: 24px;
-  height: 24px;
-  stroke: var(--color-primary);
+  width: 48px;
+  height: 48px;
+  stroke: var(--color-gold);
   fill: none;
-  stroke-width: 1.8;
+  stroke-width: 1.2;
+  filter: drop-shadow(0 0 10px rgba(124, 58, 237, 0.3));
+  transition: all var(--duration) var(--ease-out);
+}
+
+.insight-card:hover .insight-icon svg {
+  filter: drop-shadow(0 0 16px rgba(124, 58, 237, 0.5));
+  transform: scale(1.05);
 }
 
 .insight-card h3 {
@@ -926,21 +932,27 @@ section {
 }
 
 .transform-icon {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-primary-light);
-  border-radius: 12px;
+  background: transparent;
 }
 
 .transform-icon svg {
-  width: 22px;
-  height: 22px;
-  stroke: var(--color-primary);
+  width: 36px;
+  height: 36px;
+  stroke: var(--color-gold);
   fill: none;
-  stroke-width: 2;
+  stroke-width: 1.2;
+  filter: drop-shadow(0 0 8px rgba(124, 58, 237, 0.3));
+  transition: all var(--duration) var(--ease-out);
+}
+
+.transform-item:hover .transform-icon svg {
+  filter: drop-shadow(0 0 14px rgba(124, 58, 237, 0.5));
+  transform: scale(1.05);
 }
 
 .transform-item span {
