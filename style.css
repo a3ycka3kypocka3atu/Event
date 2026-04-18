@@ -1235,10 +1235,97 @@ section {
   margin-bottom: 12px;
 }
 
-.qigong-card p {
-  color: var(--color-text-secondary);
-  font-size: 0.95rem;
+.qigong-cta-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 
+    0 20px 48px var(--color-shadow),
+    0 10px 20px rgba(79, 70, 229, 0.1);
+}
+
+/* ============================================================
+   TARGET SECTION (Segmentation)
+   ============================================================ */
+.target {
+  padding: var(--section-padding) 0;
+  background: var(--bg-surface);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .target {
+  background: var(--bg-deep);
+}
+
+.target-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.target-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  text-align: center;
+  transition: all var(--duration) var(--ease-out);
+}
+
+.target-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-gold-light);
+  box-shadow: 0 30px 60px var(--color-shadow);
+}
+
+.target-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+}
+
+.target-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.2;
+}
+
+.target-card h3 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.target-card p {
   line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+/* Featured card variant with glassmorphism */
+.featured-blue {
+  background: rgba(79, 70, 229, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-color: rgba(79, 70, 229, 0.15);
+}
+
+[data-theme="dark"] .featured-blue {
+  background: rgba(124, 130, 247, 0.04);
+  border-color: rgba(124, 130, 247, 0.2);
+}
+
+/* Media Queries for Segmentation */
+@media (max-width: 768px) {
+  .target-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 /* ============================================================
