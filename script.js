@@ -351,7 +351,7 @@ function setupLanguageSwitcher() {
 let currentTheme = 'sport';
 let carouselRafId = null;
 let carouselScrollPos = 0;
-let carouselSpeed = 0.8; // px per frame
+let carouselSpeed = 0.5; // px per frame (slower rotation)
 let isCarouselDragging = false;
 let isCarouselHovered = false;
 let carouselStartX = 0;
@@ -410,8 +410,8 @@ function setupCarousel() {
     carouselScrollPos -= dx; 
     
     // Change direction based on drag direction
-    if (dx > 2) carouselSpeed = -0.8;
-    else if (dx < -2) carouselSpeed = 0.8;
+    if (dx > 2) carouselSpeed = -0.5;
+    else if (dx < -2) carouselSpeed = 0.5;
     
     carouselPrevX = e.pageX;
   });
@@ -434,8 +434,8 @@ function setupCarousel() {
     const dx = e.touches[0].pageX - carouselPrevX;
     carouselScrollPos -= dx;
     
-    if (dx > 2) carouselSpeed = -0.8;
-    else if (dx < -2) carouselSpeed = 0.8;
+    if (dx > 2) carouselSpeed = -0.5;
+    else if (dx < -2) carouselSpeed = 0.5;
     
     carouselPrevX = e.touches[0].pageX;
   }, {passive: true});
