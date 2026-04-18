@@ -60,6 +60,39 @@
   --duration-fast: 0.2s;
 }
 
+[data-theme="dark"] {
+  /* Backgrounds — Dark mode */
+  --bg-deep: #0D0B12;
+  --bg-surface: #141118;
+  --bg-elevated: #1C1823;
+  --bg-card: #181520;
+  --bg-accent-soft: #2A1B3D;
+
+  /* Primary */
+  --color-primary: #9F67FF;
+  --color-primary-hover: #B48BFF;
+  --color-primary-light: rgba(159, 103, 255, 0.15);
+  --color-primary-glow: rgba(159, 103, 255, 0.25);
+  --color-primary-subtle: rgba(159, 103, 255, 0.1);
+
+  /* Accent */
+  --color-gold: #D4A843;
+  --color-gold-light: #FCE68C;
+  --color-gold-subtle: rgba(212, 168, 67, 0.15);
+
+  /* Text */
+  --color-text: #F5F3ED;
+  --color-text-secondary: #B4AEBE;
+  --color-text-muted: #8A8496;
+  --color-text-dim: #605B6C;
+
+  /* Border & Surface */
+  --color-border: rgba(159, 103, 255, 0.15);
+  --color-border-hover: rgba(159, 103, 255, 0.3);
+  --color-glass: rgba(13, 11, 18, 0.85);
+  --color-shadow: rgba(0, 0, 0, 0.4);
+}
+
 /* ---------- Reset & Base ---------- */
 *, *::before, *::after {
   margin: 0;
@@ -333,6 +366,43 @@ section {
   background: var(--color-primary);
   color: #FFFFFF;
 }
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--bg-surface);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all var(--duration-fast) ease;
+  margin-left: 12px;
+  padding: 0;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+.theme-toggle-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+/* Hide moon icon in dark mode, hide sun icon in light mode */
+.theme-toggle-btn .icon-sun { display: none; }
+.theme-toggle-btn .icon-moon { display: block; }
+[data-theme="dark"] .theme-toggle-btn .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle-btn .icon-moon { display: none; }
 
 /* Mobile Menu Button */
 .mobile-menu-btn {

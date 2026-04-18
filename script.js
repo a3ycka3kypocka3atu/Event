@@ -504,12 +504,38 @@ function filterAndBuildCarousel(theme) {
   });
 }
 
+// ─────────── THEME ENGINE ───────────
+function setupTheme() {
+  const toggleBtn = document.getElementById('themeToggleBtn');
+  if (!toggleBtn) return;
+
+  // Check saved theme or system preference
+  const savedTheme = localStorage.getItem('event-theme');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('event-theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('event-theme', 'dark');
+    }
+  });
+}
+
 // ─────────── INIT ───────────
 document.addEventListener('DOMContentLoaded', () => {
   // Apply saved or default language
   setLanguage(currentLang);
 
   // Setup all interactions
+  setupTheme();
   setupLanguageSwitcher();
   setupMobileMenu();
   setupSmoothScroll();
