@@ -112,6 +112,19 @@ const translations = {
     day_sat: 'Суббота',
     day_sun: 'Воскресенье',
     schedule_note: 'Вы можете посетить одну встречу или весь цикл',
+    
+    // Pricing
+    pricing_label: 'Участие',
+    pricing_title: 'Стоимость и Регистрация',
+    price_primary_title: 'Полное участие (2 дня)',
+    price_primary_amt: '50 €',
+    price_primary_desc: 'Доступ ко всем лекциям, практикам Йога-Цигун и медитациям.',
+    price_club_title: 'Для резидентов Santiago Club',
+    price_club_amt: '25 €',
+    price_club_desc: 'Специальная цена для участников клуба.',
+    price_club_btn: 'Получить скидку клуба',
+    price_access_text: 'Мы верим, что знания должны быть доступны. Если вы сейчас находитесь в сложной финансовой ситуации, но искренне хотите попасть на практику — напишите нам. Мы обсудим возможность бесплатного участия.',
+    price_access_btn: 'Связаться с нами',
 
     // Location
     location_label: 'Место проведения',
@@ -238,6 +251,19 @@ const translations = {
     day_sat: 'Субота',
     day_sun: 'Неділя',
     schedule_note: 'Ви можете відвідати одну зустріч або весь цикл',
+
+    // Pricing
+    pricing_label: 'Участь',
+    pricing_title: 'Вартість та Реєстрація',
+    price_primary_title: 'Повна участь (2 дні)',
+    price_primary_amt: '50 €',
+    price_primary_desc: 'Доступ до всіх лекцій, практик Йога-Цигун та медитацій.',
+    price_club_title: 'Для резидентів Santiago Club',
+    price_club_amt: '25 €',
+    price_club_desc: 'Спеціальна ціна для учасників клубу.',
+    price_club_btn: 'Отримати знижку клубу',
+    price_access_text: 'Ми віримо, що знання мають бути доступними. Якщо ви зараз перебуваєте у складній фінансовій ситуації, але щиро бажаєте потрапити на практику — напишіть нам. Ми обговоримо можливість безкоштовної участі.',
+    price_access_btn: 'Зв\'язатися з нами',
 
     // Location
     location_label: 'Місце проведення',

@@ -1730,6 +1730,148 @@ a.hero-meta-item:hover svg {
 }
 
 /* ============================================================
+   PRICING SECTION
+   ============================================================ */
+.pricing {
+  background: var(--bg-surface);
+  position: relative;
+  overflow: hidden;
+  padding: var(--section-padding) 0;
+}
+
+[data-theme="dark"] .pricing {
+  background: var(--bg-deep);
+}
+
+.pricing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  width: 100%;
+  background: var(--bg-elevated);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform var(--duration) var(--ease-out), box-shadow var(--duration) var(--ease-out), border-color var(--duration);
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px var(--color-shadow);
+  border-color: var(--color-primary-hover);
+}
+
+/* Primary Tier prominence */
+.pricing-card--primary {
+  max-width: 650px;
+  border: 2px solid var(--color-primary);
+  background: linear-gradient(180deg, var(--color-primary-subtle), var(--bg-elevated));
+}
+
+.pricing-card--primary .price-val {
+  font-size: clamp(3rem, 5vw, 4rem);
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  display: block;
+  margin-top: 8px;
+}
+
+.pricing-card--primary h3 {
+  font-size: 1.6rem;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+/* Secondary Tier prominence */
+.pricing-card--secondary {
+  max-width: 480px;
+  padding: 36px 32px;
+}
+
+.pricing-card--secondary .price-val {
+  font-size: 2.2rem;
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  display: block;
+  margin-top: 4px;
+}
+
+.pricing-card--secondary h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.pricing-card-header {
+  margin-bottom: 24px;
+}
+
+.pricing-desc {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 420px;
+}
+
+/* Accessible Tier subtle style */
+.pricing-accessible {
+  text-align: center;
+  max-width: 700px;
+  padding: 32px 24px;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.02);
+  margin-top: 16px;
+}
+
+.pricing-accessible p {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--color-primary);
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.text-link:hover {
+  color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  letter-spacing: 0.02em;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .pricing-card {
+    padding: 40px 24px;
+  }
+  .pricing-card--primary .price-val {
+    font-size: 3rem;
+  }
+}
+
+
+/* ============================================================
    LOCATION SECTION
    ============================================================ */
 .location {
