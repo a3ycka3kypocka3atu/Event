@@ -753,7 +753,7 @@ section {
   position: absolute;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.07;
+  opacity: 0.12;
   animation: geoFloat 25s ease-in-out infinite;
 }
 
@@ -786,7 +786,7 @@ section {
   transform: translate(-50%, -50%);
   width: clamp(350px, 45vw, 650px);
   height: clamp(350px, 45vw, 650px);
-  opacity: 0.05;
+  opacity: 0.09;
 }
 
 /* Blue spectrum variant */
@@ -810,19 +810,19 @@ section {
 }
 
 @keyframes geoPulse {
-  0%, 100% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 0.05; }
-  50% { transform: translate(-50%, -50%) scale(1.03) rotate(2deg); opacity: 0.08; }
+  0%, 100% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 0.09; }
+  50% { transform: translate(-50%, -50%) scale(1.03) rotate(2deg); opacity: 0.14; }
 }
 
 /* Dark mode: make geometry more visible and golden */
-[data-theme="dark"] .section-geo-bg { opacity: 0.1; }
+[data-theme="dark"] .section-geo-bg { opacity: 0.18; }
 [data-theme="dark"] .section-geo-bg svg { stroke: var(--color-gold-light); }
 [data-theme="dark"] .section-geo-bg--blue svg { stroke: #7BA3E0; }
-[data-theme="dark"] .section-geo-bg--center { opacity: 0.07; }
+[data-theme="dark"] .section-geo-bg--center { opacity: 0.12; }
 
 @media (max-width: 768px) {
-  .section-geo-bg { opacity: 0.04; }
-  [data-theme="dark"] .section-geo-bg { opacity: 0.06; }
+  .section-geo-bg { opacity: 0.08; }
+  [data-theme="dark"] .section-geo-bg { opacity: 0.12; }
 }
 
 /* ============================================================
