@@ -1008,6 +1008,7 @@ section {
 .qigong-card {
   background: var(--bg-deep);
   border: 1px solid rgba(124, 58, 237, 0.1);
+  border-top: 2px solid var(--color-gold);
   border-radius: var(--radius);
   padding: 36px 32px;
   transition: all var(--duration) var(--ease-out);
@@ -1017,27 +1018,33 @@ section {
 
 .qigong-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(124, 58, 237, 0.05);
-  border-color: rgba(124, 58, 237, 0.3);
+  box-shadow: 0 16px 40px rgba(212, 168, 67, 0.08);
+  border-color: rgba(212, 168, 67, 0.3);
 }
 
 .qigong-icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-primary-subtle);
-  border-radius: 12px;
+  background: transparent;
 }
 
 .qigong-icon svg {
-  width: 24px;
-  height: 24px;
-  stroke: var(--color-primary);
+  width: 48px;
+  height: 48px;
+  stroke: var(--color-gold);
   fill: none;
-  stroke-width: 1.5;
+  stroke-width: 1.2;
+  filter: drop-shadow(0 0 10px rgba(124, 58, 237, 0.3));
+  transition: all var(--duration) var(--ease-out);
+}
+
+.qigong-card:hover .qigong-icon svg {
+  filter: drop-shadow(0 0 16px rgba(124, 58, 237, 0.5));
+  transform: scale(1.05);
 }
 
 .qigong-card h3 {
