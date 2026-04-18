@@ -1778,16 +1778,39 @@ section {
   color: var(--color-text-muted);
 }
 
-.location-map-btn {
+.location-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 28px;
 }
 
-.location-map-btn svg {
-  width: 16px;
-  height: 16px;
+.location-map-btn, .location-insta-btn {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+.location-map-btn svg, .location-insta-btn svg {
+  width: 18px;
+  height: 18px;
   stroke: currentColor;
   fill: none;
-  stroke-width: 2;
+  stroke-width: 1.5;
+}
+
+.footer-insta-link {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-right: 15px;
+  transition: opacity 0.2s;
+}
+
+.footer-insta-link:hover {
+  opacity: 0.8;
 }
 
 .location-visual {

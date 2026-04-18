@@ -116,6 +116,7 @@ const translations = {
     location_label: 'Место проведения',
     location_title: 'Studio Santiago',
     location_map: '<svg viewBox="0 0 24 24"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg> Открыть на карте',
+    location_insta: '<svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Studio Instagram',
 
     // CTA
     cta_title: 'Откройте для себя путь к глубокому узнаванию',
@@ -240,6 +241,7 @@ const translations = {
     location_label: 'Місце проведення',
     location_title: 'Studio Santiago',
     location_map: '<svg viewBox="0 0 24 24"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg> Відкрити на карті',
+    location_insta: '<svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Studio Instagram',
 
     // CTA
     cta_title: 'Відкрийте для себе шлях до глибокого впізнавання',
